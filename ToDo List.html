@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas <i class="fas fa-clipboard-list"></i></h1>
+        
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Añade una nueva tarea...">
+            <button id="addTaskBtn"><i class="fas fa-plus"></i> Añadir</button>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="pending">Pendientes</button>
+            <button class="filter-btn" data-filter="completed">Completadas</button>
+        </div>
+        
+        <ul id="taskList"></ul>
+        
+        <div class="stats">
+            <span id="taskCount">0 tareas pendientes</span>
+            <button id="clearAllBtn">Limpiar completadas</button>
+        </div>
+    </div>
+
+    <script src="To-DoList.js"></script>
+</body>
+</html>
